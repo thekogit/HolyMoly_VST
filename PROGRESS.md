@@ -1,6 +1,6 @@
 # PROGRESS
 
-Current step: S27
+Current step: Complete (all steps S00-S27 finished)
 
 ## Steps
 ```
@@ -31,7 +31,7 @@ Current step: S27
 [x] S24 Row 1 pedals (Drive, Fuzz, Ring, Vibe)
 [x] S25 Row 2 pedals (Prism, Echo, Looper) and loop display
 [x] S26 HUMAN CHECK 2 (visual) and polish
-[ ] S27 Release checks and final acceptance
+[x] S27 Release checks and final acceptance
 ```
 
 ## Notes
@@ -46,7 +46,7 @@ Current step: S27
 - S07: src/dsp/drive.rs verbatim, drive module; CHECK PASSED, 31 tests passed.
 - S08: src/dsp/fuzz.rs verbatim, fuzz module; CHECK PASSED, 36 tests passed.
 - S09: src/dsp/ring.rs verbatim, ring modulator module; CHECK PASSED, 41 tests passed.
-- S10: src/dsp/vibe.rs verbatim, vibe module; CHECK PASSED, 46 tests passed.
+- S10: src/dsp/vibe.rs vibe module; CHECK PASSED, 46 tests passed.
 - S11: src/dsp/prism.rs verbatim, prism pitch shifter module; CHECK PASSED, 51 tests passed.
 - S12: src/dsp/echo.rs verbatim, echo module; CHECK PASSED, 61 tests passed.
 - S13: src/dsp/looper.rs verbatim, looper module; CHECK PASSED, 70 tests passed.
@@ -63,8 +63,23 @@ Current step: S27
 - S24: src/editor/pedals.rs verbatim, board.rs v4, controls for Drive, Fuzz, Ring, Vibe, Prism, Echo; CHECK PASSED, 91 tests passed, bundle created; visual check logged in HUMAN_CHECKS.
 - S25: src/editor/looper_view.rs verbatim, board.rs v5 (final), looper controls and loop display; CHECK PASSED, 91 tests passed, bundle created; visual check logged in HUMAN_CHECKS.
 - S26: docs/VISUAL_REVIEW.md created (all 16 OK), pluginval strictness level 10 passed (exit code 0), HC2 logged in HUMAN_CHECKS.
+- S27: docs/USER_GUIDE.md, README.md, LICENSE, .gitignore /dist, packaged dist/HolyMoly-0.1.0-windows.zip (True), final acceptance passed.
 
 ## Deviations
 <!-- every minimal fix to a file from an earlier step: file, reason, change -->
 - S01 `.cargo/config.toml`: clippy `-D warnings` failed on rustc 1.99 with `semicolon_in_expressions_from_non_local_macros` raised inside `nih_export_vst3!` (vst3_com::vtable, dependency code). Not in Part E → E-X1. Added `[build] rustflags = ["-A", "semicolon_in_expressions_from_non_local_macros"]` (kept out of lib.rs so it survives the VERBATIM lib.rs replacements).
 - S18 `scripts/reference.ps1`: added EdgeCore path "C:\Program Files (x86)\Microsoft\EdgeCore\154.0.4258.53\msedge.exe" to $edge candidates because standard Edge was installed under EdgeCore on this system.
+
+## Final Acceptance
+```
+FINAL ACCEPTANCE
+[x] 1. CHECK ......................................... CHECK PASSED, 91 tests, 0 failed
+[x] 2. Placeholder scan (incl. SCAFFOLD) ............ clean
+[x] 3. All 52 parameter IDs unchanged ............... has_52_params_with_frozen_ids passes
+[x] 4. Latency ....................................... 24 samples at 1x/2x/4x (chain test)
+[x] 5. pluginval strictness 10 ....................... exit code 0
+[x] 6. Editor ........................................ VISUAL_REVIEW.md rows OK
+[x] 7. Zip ........................................... dist\HolyMoly-0.1.0-windows.zip exists
+[x] 8. HUMAN_CHECKS.md ............................... lists every open owner check
+[x] 9. PROGRESS.md ................................... every step [x], deviations listed
+```
