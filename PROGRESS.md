@@ -1,6 +1,6 @@
 # PROGRESS
 
-Current step: S22
+Current step: S23
 
 ## Steps
 ```
@@ -26,7 +26,7 @@ Current step: S22
 [x] S19 paint.rs and layout.rs
 [x] S20 Knob widget
 [x] S21 Selector, toggle, push button, LED, footswitch, icons
-[ ] S22 Top strip and tuner display
+[x] S22 Top strip and tuner display
 [ ] S23 Pedal frame and artwork
 [ ] S24 Row 1 pedals (Drive, Fuzz, Ring, Vibe)
 [ ] S25 Row 2 pedals (Prism, Echo, Looper) and loop display
@@ -58,6 +58,7 @@ Current step: S22
 - S19: src/editor/paint.rs and layout.rs verbatim, drawing helpers and layout maths; CHECK PASSED, 88 tests passed.
 - S20: src/editor/knob.rs verbatim, knob widget with all sizes, steps, danger arc; CHECK PASSED, 91 tests passed, bundle created.
 - S21: src/editor/widgets.rs verbatim, LED, footswitch, selector, toggle, push button, icons; CHECK PASSED, 91 tests passed.
+- S22: src/editor/strip.rs verbatim, board.rs v2, top strip and tuner display; CHECK PASSED, 91 tests passed, bundle created; visual check logged in HUMAN_CHECKS.
 
 ## Deviations
 <!-- every minimal fix to a file from an earlier step: file, reason, change -->
