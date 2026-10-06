@@ -2,6 +2,8 @@
 
 pub mod board;
 pub mod fonts;
+pub mod layout;
+pub mod paint;
 pub mod theme;
 
 use crate::dsp::tuner::{Reading, Yin, BUFFER};

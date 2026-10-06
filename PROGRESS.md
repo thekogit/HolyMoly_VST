@@ -1,6 +1,6 @@
 # PROGRESS
 
-Current step: S19
+Current step: S20
 
 ## Steps
 ```
@@ -23,7 +23,7 @@ Current step: S19
 [x] S16 lib.rs final wiring, bundle, pluginval, HUMAN CHECK 1
 [x] S17 Fonts
 [x] S18 Editor skeleton and background
-[ ] S19 paint.rs and layout.rs
+[x] S19 paint.rs and layout.rs
 [ ] S20 Knob widget
 [ ] S21 Selector, toggle, push button, LED, footswitch, icons
 [ ] S22 Top strip and tuner display
@@ -55,6 +55,7 @@ Current step: S19
 - S16: src/lib.rs final wiring, scripts/check.ps1 tightened, .gitignore /tools, pluginval level 5 exit code 0; CHECK PASSED, 81 tests passed; HC1 logged.
 - S17: scripts/get_fonts.ps1 FONTS OK, build.rs cfg(hm_fonts), fonts embedded: yes, src/editor/fonts.rs verbatim; CHECK PASSED, 82 tests passed.
 - S18: standalone feature, src/main.rs, theme.rs, editor/mod.rs, board.rs v1, screenshot.ps1, reference.ps1; REFERENCE OK; CHECK PASSED, 82 tests passed, bundle created; screenshot CopyFromScreen non-interactive handle (E-E3) logged in HUMAN_CHECKS.
+- S19: src/editor/paint.rs and layout.rs verbatim, drawing helpers and layout maths; CHECK PASSED, 88 tests passed.
 
 ## Deviations
 <!-- every minimal fix to a file from an earlier step: file, reason, change -->
