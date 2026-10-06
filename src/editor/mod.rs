@@ -5,6 +5,7 @@ pub mod fonts;
 pub mod knob;
 pub mod layout;
 pub mod paint;
+pub mod pedal;
 pub mod strip;
 pub mod theme;
 pub mod widgets;
