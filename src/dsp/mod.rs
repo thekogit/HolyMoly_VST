@@ -6,6 +6,7 @@ pub mod looper;
 pub mod oversample;
 pub mod prism;
 pub mod ring;
+pub mod tuner;
 pub mod util;
 pub mod vibe;
 

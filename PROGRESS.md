@@ -1,6 +1,6 @@
 # PROGRESS
 
-Current step: S14
+Current step: S15
 
 ## Steps
 ```
@@ -18,7 +18,7 @@ Current step: S14
 [x] S11 dsp/prism.rs
 [x] S12 dsp/echo.rs
 [x] S13 dsp/looper.rs
-[ ] S14 dsp/tuner.rs
+[x] S14 dsp/tuner.rs
 [ ] S15 shared.rs and chain.rs
 [ ] S16 lib.rs final wiring, bundle, pluginval, HUMAN CHECK 1
 [ ] S17 Fonts
@@ -50,6 +50,7 @@ Current step: S14
 - S11: src/dsp/prism.rs verbatim, prism pitch shifter module; CHECK PASSED, 51 tests passed.
 - S12: src/dsp/echo.rs verbatim, echo module; CHECK PASSED, 61 tests passed.
 - S13: src/dsp/looper.rs verbatim, looper module; CHECK PASSED, 70 tests passed.
+- S14: src/dsp/tuner.rs verbatim, tuner module; CHECK PASSED, 76 tests passed.
 
 ## Deviations
 <!-- every minimal fix to a file from an earlier step: file, reason, change -->
