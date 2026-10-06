@@ -6,6 +6,7 @@ pub mod knob;
 pub mod layout;
 pub mod paint;
 pub mod theme;
+pub mod widgets;
 
 use crate::dsp::tuner::{Reading, Yin, BUFFER};
 use crate::params::HolyMolyParams;

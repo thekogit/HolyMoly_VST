@@ -1,6 +1,6 @@
 # PROGRESS
 
-Current step: S21
+Current step: S22
 
 ## Steps
 ```
@@ -25,7 +25,7 @@ Current step: S21
 [x] S18 Editor skeleton and background
 [x] S19 paint.rs and layout.rs
 [x] S20 Knob widget
-[ ] S21 Selector, toggle, push button, LED, footswitch, icons
+[x] S21 Selector, toggle, push button, LED, footswitch, icons
 [ ] S22 Top strip and tuner display
 [ ] S23 Pedal frame and artwork
 [ ] S24 Row 1 pedals (Drive, Fuzz, Ring, Vibe)
@@ -57,6 +57,7 @@ Current step: S21
 - S18: standalone feature, src/main.rs, theme.rs, editor/mod.rs, board.rs v1, screenshot.ps1, reference.ps1; REFERENCE OK; CHECK PASSED, 82 tests passed, bundle created; screenshot CopyFromScreen non-interactive handle (E-E3) logged in HUMAN_CHECKS.
 - S19: src/editor/paint.rs and layout.rs verbatim, drawing helpers and layout maths; CHECK PASSED, 88 tests passed.
 - S20: src/editor/knob.rs verbatim, knob widget with all sizes, steps, danger arc; CHECK PASSED, 91 tests passed, bundle created.
+- S21: src/editor/widgets.rs verbatim, LED, footswitch, selector, toggle, push button, icons; CHECK PASSED, 91 tests passed.
 
 ## Deviations
 <!-- every minimal fix to a file from an earlier step: file, reason, change -->
