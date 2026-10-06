@@ -1,6 +1,6 @@
 # PROGRESS
 
-Current step: S06
+Current step: S07
 
 ## Steps
 ```
@@ -10,7 +10,7 @@ Current step: S06
 [x] S03 fmt.rs — value text
 [x] S04 params.rs — the 52 parameters
 [x] S05 dsp/util.rs and dsp/testutil.rs
-[ ] S06 dsp/oversample.rs
+[x] S06 dsp/oversample.rs
 [ ] S07 dsp/drive.rs
 [ ] S08 dsp/fuzz.rs
 [ ] S09 dsp/ring.rs
@@ -42,6 +42,7 @@ Current step: S06
 - S03: src/fmt.rs verbatim, `pub mod fmt;` in lib.rs; CHECK PASSED, 6 tests passed.
 - S04: src/params.rs verbatim, 52 parameters with frozen IDs; CHECK PASSED, 9 tests passed, bundle created.
 - S05: src/dsp/mod.rs, util.rs, testutil.rs verbatim, `pub mod dsp;` in lib.rs; CHECK PASSED, 20 tests passed.
+- S06: src/dsp/oversample.rs verbatim, stereo 1x/2x/4x oversampler; CHECK PASSED, 25 tests passed.
 
 ## Deviations
 <!-- every minimal fix to a file from an earlier step: file, reason, change -->
