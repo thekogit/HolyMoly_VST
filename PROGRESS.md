@@ -1,6 +1,6 @@
 # PROGRESS
 
-Current step: S15
+Current step: S16
 
 ## Steps
 ```
@@ -19,7 +19,7 @@ Current step: S15
 [x] S12 dsp/echo.rs
 [x] S13 dsp/looper.rs
 [x] S14 dsp/tuner.rs
-[ ] S15 shared.rs and chain.rs
+[x] S15 shared.rs and chain.rs
 [ ] S16 lib.rs final wiring, bundle, pluginval, HUMAN CHECK 1
 [ ] S17 Fonts
 [ ] S18 Editor skeleton and background
@@ -51,6 +51,7 @@ Current step: S15
 - S12: src/dsp/echo.rs verbatim, echo module; CHECK PASSED, 61 tests passed.
 - S13: src/dsp/looper.rs verbatim, looper module; CHECK PASSED, 70 tests passed.
 - S14: src/dsp/tuner.rs verbatim, tuner module; CHECK PASSED, 76 tests passed.
+- S15: src/shared.rs and src/chain.rs verbatim, shared state and signal chain; CHECK PASSED, 81 tests passed.
 
 ## Deviations
 <!-- every minimal fix to a file from an earlier step: file, reason, change -->

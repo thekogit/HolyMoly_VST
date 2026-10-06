@@ -10,9 +10,11 @@
 #![allow(clippy::collapsible_else_if)]
 #![allow(clippy::type_complexity)]
 
+pub mod chain;
 pub mod dsp;
 pub mod fmt;
 pub mod params;
+pub mod shared;
 
 use nih_plug::prelude::*;
 use params::HolyMolyParams;
