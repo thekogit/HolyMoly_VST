@@ -1,6 +1,6 @@
 # PROGRESS
 
-Current step: S07
+Current step: S08
 
 ## Steps
 ```
@@ -11,7 +11,7 @@ Current step: S07
 [x] S04 params.rs — the 52 parameters
 [x] S05 dsp/util.rs and dsp/testutil.rs
 [x] S06 dsp/oversample.rs
-[ ] S07 dsp/drive.rs
+[x] S07 dsp/drive.rs
 [ ] S08 dsp/fuzz.rs
 [ ] S09 dsp/ring.rs
 [ ] S10 dsp/vibe.rs
@@ -43,6 +43,7 @@ Current step: S07
 - S04: src/params.rs verbatim, 52 parameters with frozen IDs; CHECK PASSED, 9 tests passed, bundle created.
 - S05: src/dsp/mod.rs, util.rs, testutil.rs verbatim, `pub mod dsp;` in lib.rs; CHECK PASSED, 20 tests passed.
 - S06: src/dsp/oversample.rs verbatim, stereo 1x/2x/4x oversampler; CHECK PASSED, 25 tests passed.
+- S07: src/dsp/drive.rs verbatim, drive module; CHECK PASSED, 31 tests passed.
 
 ## Deviations
 <!-- every minimal fix to a file from an earlier step: file, reason, change -->
