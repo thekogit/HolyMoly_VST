@@ -1,0 +1,5 @@
+[alias]
+xtask = "run --package xtask --release --"
+
+[build]
+rustflags = ["-A", "semicolon_in_expressions_from_non_local_macros"]

@@ -1,11 +1,11 @@
 # PROGRESS
 
-Current step: S01
+Current step: S02
 
 ## Steps
 ```
 [x] S00 Workspace setup
-[ ] S01 Cargo project and empty VST3 (SCAFFOLD)
+[x] S01 Cargo project and empty VST3 (SCAFFOLD)
 [ ] S02 Pin the NIH-plug revision
 [ ] S03 fmt.rs — value text
 [ ] S04 params.rs — the 52 parameters
@@ -36,6 +36,9 @@ Current step: S01
 
 ## Notes
 <!-- one line per finished step: "S0x: what was done, test count" -->
+- S00: git repo, folders, reference\holy-moly-editor.html. Concept .md NOT present in workspace (HUMAN_CHECKS #1). rustc 1.99 lives in %USERPROFILE%\.cargo\bin (prepended to PATH per command). Sandbox makes .git owned by Administrators → git runs with `-c safe.directory=*`.
+- S01: scaffold builds, CHECK PASSED (0 tests), bundle created. nih-plug resolved to de421011, egui 0.31.1. Network steps (first build, bundle/cargo metadata) run outside the sandbox.
 
 ## Deviations
 <!-- every minimal fix to a file from an earlier step: file, reason, change -->
+- S01 `.cargo/config.toml`: clippy `-D warnings` failed on rustc 1.99 with `semicolon_in_expressions_from_non_local_macros` raised inside `nih_export_vst3!` (vst3_com::vtable, dependency code). Not in Part E → E-X1. Added `[build] rustflags = ["-A", "semicolon_in_expressions_from_non_local_macros"]` (kept out of lib.rs so it survives the VERBATIM lib.rs replacements).
