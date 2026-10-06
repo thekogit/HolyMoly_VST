@@ -2,6 +2,7 @@
 pub mod drive;
 pub mod echo;
 pub mod fuzz;
+pub mod looper;
 pub mod oversample;
 pub mod prism;
 pub mod ring;
