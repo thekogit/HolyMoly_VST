@@ -10,6 +10,7 @@
 #![allow(clippy::collapsible_else_if)]
 #![allow(clippy::type_complexity)]
 
+pub mod dsp;
 pub mod fmt;
 pub mod params;
 
