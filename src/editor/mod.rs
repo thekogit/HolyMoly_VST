@@ -2,6 +2,7 @@
 
 pub mod board;
 pub mod fonts;
+pub mod knob;
 pub mod layout;
 pub mod paint;
 pub mod theme;

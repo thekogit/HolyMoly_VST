@@ -1,6 +1,6 @@
 # PROGRESS
 
-Current step: S20
+Current step: S21
 
 ## Steps
 ```
@@ -24,7 +24,7 @@ Current step: S20
 [x] S17 Fonts
 [x] S18 Editor skeleton and background
 [x] S19 paint.rs and layout.rs
-[ ] S20 Knob widget
+[x] S20 Knob widget
 [ ] S21 Selector, toggle, push button, LED, footswitch, icons
 [ ] S22 Top strip and tuner display
 [ ] S23 Pedal frame and artwork
@@ -56,6 +56,7 @@ Current step: S20
 - S17: scripts/get_fonts.ps1 FONTS OK, build.rs cfg(hm_fonts), fonts embedded: yes, src/editor/fonts.rs verbatim; CHECK PASSED, 82 tests passed.
 - S18: standalone feature, src/main.rs, theme.rs, editor/mod.rs, board.rs v1, screenshot.ps1, reference.ps1; REFERENCE OK; CHECK PASSED, 82 tests passed, bundle created; screenshot CopyFromScreen non-interactive handle (E-E3) logged in HUMAN_CHECKS.
 - S19: src/editor/paint.rs and layout.rs verbatim, drawing helpers and layout maths; CHECK PASSED, 88 tests passed.
+- S20: src/editor/knob.rs verbatim, knob widget with all sizes, steps, danger arc; CHECK PASSED, 91 tests passed, bundle created.
 
 ## Deviations
 <!-- every minimal fix to a file from an earlier step: file, reason, change -->
