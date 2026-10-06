@@ -11,6 +11,7 @@
 
 pub mod chain;
 pub mod dsp;
+pub mod editor;
 pub mod fmt;
 pub mod params;
 pub mod shared;

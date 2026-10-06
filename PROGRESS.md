@@ -1,6 +1,6 @@
 # PROGRESS
 
-Current step: S17
+Current step: S18
 
 ## Steps
 ```
@@ -21,7 +21,7 @@ Current step: S17
 [x] S14 dsp/tuner.rs
 [x] S15 shared.rs and chain.rs
 [x] S16 lib.rs final wiring, bundle, pluginval, HUMAN CHECK 1
-[ ] S17 Fonts
+[x] S17 Fonts
 [ ] S18 Editor skeleton and background
 [ ] S19 paint.rs and layout.rs
 [ ] S20 Knob widget
@@ -53,6 +53,7 @@ Current step: S17
 - S14: src/dsp/tuner.rs verbatim, tuner module; CHECK PASSED, 76 tests passed.
 - S15: src/shared.rs and src/chain.rs verbatim, shared state and signal chain; CHECK PASSED, 81 tests passed.
 - S16: src/lib.rs final wiring, scripts/check.ps1 tightened, .gitignore /tools, pluginval level 5 exit code 0; CHECK PASSED, 81 tests passed; HC1 logged.
+- S17: scripts/get_fonts.ps1 FONTS OK, build.rs cfg(hm_fonts), fonts embedded: yes, src/editor/fonts.rs verbatim; CHECK PASSED, 82 tests passed.
 
 ## Deviations
 <!-- every minimal fix to a file from an earlier step: file, reason, change -->
