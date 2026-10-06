@@ -149,6 +149,10 @@ impl Plugin for HolyMoly {
         self.params.clone()
     }
 
+    fn editor(&mut self, _async_executor: AsyncExecutor<Self>) -> Option<Box<dyn Editor>> {
+        editor::create(self.params.clone(), self.shared.clone())
+    }
+
     fn initialize(
         &mut self,
         audio_io_layout: &AudioIOLayout,

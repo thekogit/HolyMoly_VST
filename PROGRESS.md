@@ -1,6 +1,6 @@
 # PROGRESS
 
-Current step: S18
+Current step: S19
 
 ## Steps
 ```
@@ -22,7 +22,7 @@ Current step: S18
 [x] S15 shared.rs and chain.rs
 [x] S16 lib.rs final wiring, bundle, pluginval, HUMAN CHECK 1
 [x] S17 Fonts
-[ ] S18 Editor skeleton and background
+[x] S18 Editor skeleton and background
 [ ] S19 paint.rs and layout.rs
 [ ] S20 Knob widget
 [ ] S21 Selector, toggle, push button, LED, footswitch, icons
@@ -54,7 +54,9 @@ Current step: S18
 - S15: src/shared.rs and src/chain.rs verbatim, shared state and signal chain; CHECK PASSED, 81 tests passed.
 - S16: src/lib.rs final wiring, scripts/check.ps1 tightened, .gitignore /tools, pluginval level 5 exit code 0; CHECK PASSED, 81 tests passed; HC1 logged.
 - S17: scripts/get_fonts.ps1 FONTS OK, build.rs cfg(hm_fonts), fonts embedded: yes, src/editor/fonts.rs verbatim; CHECK PASSED, 82 tests passed.
+- S18: standalone feature, src/main.rs, theme.rs, editor/mod.rs, board.rs v1, screenshot.ps1, reference.ps1; REFERENCE OK; CHECK PASSED, 82 tests passed, bundle created; screenshot CopyFromScreen non-interactive handle (E-E3) logged in HUMAN_CHECKS.
 
 ## Deviations
 <!-- every minimal fix to a file from an earlier step: file, reason, change -->
 - S01 `.cargo/config.toml`: clippy `-D warnings` failed on rustc 1.99 with `semicolon_in_expressions_from_non_local_macros` raised inside `nih_export_vst3!` (vst3_com::vtable, dependency code). Not in Part E → E-X1. Added `[build] rustflags = ["-A", "semicolon_in_expressions_from_non_local_macros"]` (kept out of lib.rs so it survives the VERBATIM lib.rs replacements).
+- S18 `scripts/reference.ps1`: added EdgeCore path "C:\Program Files (x86)\Microsoft\EdgeCore\154.0.4258.53\msedge.exe" to $edge candidates because standard Edge was installed under EdgeCore on this system.
