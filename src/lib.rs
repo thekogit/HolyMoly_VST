@@ -9,6 +9,7 @@
 #![allow(clippy::manual_range_contains)]
 #![allow(clippy::collapsible_else_if)]
 #![allow(clippy::type_complexity)]
+pub mod fmt;
 
 use nih_plug::prelude::*;
 use std::sync::Arc;

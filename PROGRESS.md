@@ -1,13 +1,13 @@
 # PROGRESS
 
-Current step: S03
+Current step: S04
 
 ## Steps
 ```
 [x] S00 Workspace setup
 [x] S01 Cargo project and empty VST3 (SCAFFOLD)
 [x] S02 Pin the NIH-plug revision
-[ ] S03 fmt.rs — value text
+[x] S03 fmt.rs — value text
 [ ] S04 params.rs — the 52 parameters
 [ ] S05 dsp/util.rs and dsp/testutil.rs
 [ ] S06 dsp/oversample.rs
@@ -39,6 +39,7 @@ Current step: S03
 - S00: git repo, folders, reference\holy-moly-editor.html. Concept .md NOT present in workspace (HUMAN_CHECKS #1). rustc 1.99 lives in %USERPROFILE%\.cargo\bin (prepended to PATH per command). Sandbox makes .git owned by Administrators → git runs with `-c safe.directory=*`.
 - S01: scaffold builds, CHECK PASSED (0 tests), bundle created. nih-plug resolved to de421011, egui 0.31.1. Network steps (first build, bundle/cargo metadata) run outside the sandbox.
 - S02: pinned rev de421011f41a6d10fc8c7a6084e4f4dee0143683 in all 3 git deps; egui 0.31.1; docs\API_NOTES.md (68 lines), docs\BUILD.md; Cargo.lock 4-line change; CHECK PASSED.
+- S03: src/fmt.rs verbatim, `pub mod fmt;` in lib.rs; CHECK PASSED, 6 tests passed.
 
 ## Deviations
 <!-- every minimal fix to a file from an earlier step: file, reason, change -->
