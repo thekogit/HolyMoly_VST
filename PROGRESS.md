@@ -1,6 +1,6 @@
 # PROGRESS
 
-Current step: S25
+Current step: S26
 
 ## Steps
 ```
@@ -29,7 +29,7 @@ Current step: S25
 [x] S22 Top strip and tuner display
 [x] S23 Pedal frame and artwork
 [x] S24 Row 1 pedals (Drive, Fuzz, Ring, Vibe)
-[ ] S25 Row 2 pedals (Prism, Echo, Looper) and loop display
+[x] S25 Row 2 pedals (Prism, Echo, Looper) and loop display
 [ ] S26 HUMAN CHECK 2 (visual) and polish
 [ ] S27 Release checks and final acceptance
 ```
@@ -61,6 +61,7 @@ Current step: S25
 - S22: src/editor/strip.rs verbatim, board.rs v2, top strip and tuner display; CHECK PASSED, 91 tests passed, bundle created; visual check logged in HUMAN_CHECKS.
 - S23: src/editor/pedal.rs verbatim, board.rs v3, pedal frame and artwork for all 7 pedals; CHECK PASSED, 91 tests passed, bundle created; visual check logged in HUMAN_CHECKS.
 - S24: src/editor/pedals.rs verbatim, board.rs v4, controls for Drive, Fuzz, Ring, Vibe, Prism, Echo; CHECK PASSED, 91 tests passed, bundle created; visual check logged in HUMAN_CHECKS.
+- S25: src/editor/looper_view.rs verbatim, board.rs v5 (final), looper controls and loop display; CHECK PASSED, 91 tests passed, bundle created; visual check logged in HUMAN_CHECKS.
 
 ## Deviations
 <!-- every minimal fix to a file from an earlier step: file, reason, change -->

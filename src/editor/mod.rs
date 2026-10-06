@@ -4,6 +4,7 @@ pub mod board;
 pub mod fonts;
 pub mod knob;
 pub mod layout;
+pub mod looper_view;
 pub mod paint;
 pub mod pedal;
 pub mod pedals;

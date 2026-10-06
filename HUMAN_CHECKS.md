@@ -8,3 +8,4 @@
 | 4 | S22 | E-E3 (S22): Verify top strip matches top of reference: halo icon and acid HOLY MOLY, large Input knob, tuner box with '–' and NO SIGNAL, small Ref knob, MUTE LED/footswitch/label, Quality selector with 4x lit, large Output knob, acid/black hazard stripes. | |
 | 5 | S23 | E-E3 (S23): Verify all seven pedals show their art, stage badge, uppercase name, LED and footswitch. Ring and Prism show faded art and an unlit LED. | |
 | 6 | S24 | E-E3 (S24): Verify Drive, Fuzz, Ring, Vibe, Prism, Echo pedal controls. Every knob shows an uppercase label in print colour and acid value; Ring Freq and Echo Division are greyed out; Echo Feedback end arc is dashed orange. | |
+| 7 | S25 | E-E3 (S25): Verify Looper pedal shows EMPTY display with MAX 30.0 s, Loop level knob showing 0.0 dB, REVERSE/STOP/CLEAR buttons, and footswitch with NEXT and REC. | |

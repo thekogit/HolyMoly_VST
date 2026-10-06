@@ -1,7 +1,7 @@
-//! The whole editor (plan.md C4). Version 4: everything except the Looper's controls.
+//! The whole editor (plan.md C4). Final version.
 
+use crate::editor::looper_view;
 use crate::editor::paint::Canvas;
-use crate::editor::pedal::{self, LedState};
 use crate::editor::pedals;
 use crate::editor::strip;
 use crate::editor::theme::*;
@@ -27,18 +27,7 @@ pub fn draw(
     pedals::vibe(ui, &cv, setter, st, params);
     pedals::prism(ui, &cv, setter, st, params);
     pedals::echo(ui, &cv, setter, st, params);
-    pedal::frame(
-        ui,
-        &cv,
-        &LOOPER,
-        LedState {
-            on: false,
-            decay: false,
-            blink: false,
-        },
-        false,
-        0.0,
-    );
+    looper_view::looper(ui, &cv, setter, st, params, shared);
 }
 
 pub fn background(cv: &Canvas) {
