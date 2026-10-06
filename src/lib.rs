@@ -1,4 +1,4 @@
-// SCAFFOLD: replaced in Step S04 and again in Step S16.
+// SCAFFOLD: process() is a pass-through until Step S16.
 #![allow(clippy::needless_range_loop)]
 #![allow(clippy::too_many_arguments)]
 #![allow(clippy::redundant_static_lifetimes)]
@@ -9,34 +9,22 @@
 #![allow(clippy::manual_range_contains)]
 #![allow(clippy::collapsible_else_if)]
 #![allow(clippy::type_complexity)]
+
 pub mod fmt;
+pub mod params;
 
 use nih_plug::prelude::*;
+use params::HolyMolyParams;
 use std::sync::Arc;
 
 pub struct HolyMoly {
-    params: Arc<ScaffoldParams>,
-}
-
-#[derive(Params)]
-struct ScaffoldParams {
-    #[id = "scaffold_gain"]
-    gain: FloatParam,
+    params: Arc<HolyMolyParams>,
 }
 
 impl Default for HolyMoly {
     fn default() -> Self {
         Self {
-            params: Arc::new(ScaffoldParams {
-                gain: FloatParam::new(
-                    "Scaffold",
-                    0.0,
-                    FloatRange::Linear {
-                        min: -1.0,
-                        max: 1.0,
-                    },
-                ),
-            }),
+            params: Arc::new(HolyMolyParams::default()),
         }
     }
 }

@@ -1,6 +1,6 @@
 # PROGRESS
 
-Current step: S04
+Current step: S05
 
 ## Steps
 ```
@@ -8,7 +8,7 @@ Current step: S04
 [x] S01 Cargo project and empty VST3 (SCAFFOLD)
 [x] S02 Pin the NIH-plug revision
 [x] S03 fmt.rs — value text
-[ ] S04 params.rs — the 52 parameters
+[x] S04 params.rs — the 52 parameters
 [ ] S05 dsp/util.rs and dsp/testutil.rs
 [ ] S06 dsp/oversample.rs
 [ ] S07 dsp/drive.rs
@@ -40,6 +40,7 @@ Current step: S04
 - S01: scaffold builds, CHECK PASSED (0 tests), bundle created. nih-plug resolved to de421011, egui 0.31.1. Network steps (first build, bundle/cargo metadata) run outside the sandbox.
 - S02: pinned rev de421011f41a6d10fc8c7a6084e4f4dee0143683 in all 3 git deps; egui 0.31.1; docs\API_NOTES.md (68 lines), docs\BUILD.md; Cargo.lock 4-line change; CHECK PASSED.
 - S03: src/fmt.rs verbatim, `pub mod fmt;` in lib.rs; CHECK PASSED, 6 tests passed.
+- S04: src/params.rs verbatim, 52 parameters with frozen IDs; CHECK PASSED, 9 tests passed, bundle created.
 
 ## Deviations
 <!-- every minimal fix to a file from an earlier step: file, reason, change -->
