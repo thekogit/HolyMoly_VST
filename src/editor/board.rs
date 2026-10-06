@@ -1,13 +1,14 @@
-//! The whole editor (plan.md C4). Version 3: background, strip, pedal frames and footswitches.
+//! The whole editor (plan.md C4). Version 4: everything except the Looper's controls.
 
 use crate::editor::paint::Canvas;
 use crate::editor::pedal::{self, LedState};
+use crate::editor::pedals;
 use crate::editor::strip;
 use crate::editor::theme::*;
 use crate::editor::UiState;
 use crate::params::HolyMolyParams;
 use crate::shared::Shared;
-use nih_plug::prelude::{BoolParam, ParamSetter};
+use nih_plug::prelude::ParamSetter;
 use nih_plug_egui::egui;
 
 pub fn draw(
@@ -20,30 +21,12 @@ pub fn draw(
     let cv = Canvas::new(ui);
     background(&cv);
     strip::draw(ui, &cv, setter, st, params, shared);
-    let ons: [(&PedalGeom, &BoolParam, &'static str); 6] = [
-        (&DRIVE, &params.drive.on, "drv_on"),
-        (&FUZZ, &params.fuzz.on, "fuz_on"),
-        (&RING, &params.ring.on, "rng_on"),
-        (&VIBE, &params.vibe.on, "vib_on"),
-        (&PRISM, &params.prism.on, "prz_on"),
-        (&ECHO, &params.echo.on, "ech_on"),
-    ];
-    for (g, param, id) in ons {
-        let on = param.value();
-        pedal::frame(
-            ui,
-            &cv,
-            g,
-            LedState {
-                on,
-                decay: false,
-                blink: false,
-            },
-            !on,
-            0.0,
-        );
-        pedal::on_footswitch(ui, &cv, setter, st, g, param, id);
-    }
+    pedals::drive(ui, &cv, setter, st, params);
+    pedals::fuzz(ui, &cv, setter, st, params);
+    pedals::ring(ui, &cv, setter, st, params);
+    pedals::vibe(ui, &cv, setter, st, params);
+    pedals::prism(ui, &cv, setter, st, params);
+    pedals::echo(ui, &cv, setter, st, params);
     pedal::frame(
         ui,
         &cv,
