@@ -2,6 +2,7 @@
 pub mod drive;
 pub mod fuzz;
 pub mod oversample;
+pub mod ring;
 pub mod util;
 
 #[cfg(test)]
