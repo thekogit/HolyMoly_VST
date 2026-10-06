@@ -4,6 +4,7 @@ pub mod fuzz;
 pub mod oversample;
 pub mod ring;
 pub mod util;
+pub mod vibe;
 
 #[cfg(test)]
 pub mod testutil;

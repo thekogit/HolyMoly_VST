@@ -1,6 +1,6 @@
 # PROGRESS
 
-Current step: S10
+Current step: S11
 
 ## Steps
 ```
@@ -14,7 +14,7 @@ Current step: S10
 [x] S07 dsp/drive.rs
 [x] S08 dsp/fuzz.rs
 [x] S09 dsp/ring.rs
-[ ] S10 dsp/vibe.rs
+[x] S10 dsp/vibe.rs
 [ ] S11 dsp/prism.rs
 [ ] S12 dsp/echo.rs
 [ ] S13 dsp/looper.rs
@@ -46,6 +46,7 @@ Current step: S10
 - S07: src/dsp/drive.rs verbatim, drive module; CHECK PASSED, 31 tests passed.
 - S08: src/dsp/fuzz.rs verbatim, fuzz module; CHECK PASSED, 36 tests passed.
 - S09: src/dsp/ring.rs verbatim, ring modulator module; CHECK PASSED, 41 tests passed.
+- S10: src/dsp/vibe.rs verbatim, vibe module; CHECK PASSED, 46 tests passed.
 
 ## Deviations
 <!-- every minimal fix to a file from an earlier step: file, reason, change -->
