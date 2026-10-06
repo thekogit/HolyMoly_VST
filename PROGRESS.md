@@ -1,6 +1,6 @@
 # PROGRESS
 
-Current step: S16
+Current step: S17
 
 ## Steps
 ```
@@ -20,7 +20,7 @@ Current step: S16
 [x] S13 dsp/looper.rs
 [x] S14 dsp/tuner.rs
 [x] S15 shared.rs and chain.rs
-[ ] S16 lib.rs final wiring, bundle, pluginval, HUMAN CHECK 1
+[x] S16 lib.rs final wiring, bundle, pluginval, HUMAN CHECK 1
 [ ] S17 Fonts
 [ ] S18 Editor skeleton and background
 [ ] S19 paint.rs and layout.rs
@@ -52,6 +52,7 @@ Current step: S16
 - S13: src/dsp/looper.rs verbatim, looper module; CHECK PASSED, 70 tests passed.
 - S14: src/dsp/tuner.rs verbatim, tuner module; CHECK PASSED, 76 tests passed.
 - S15: src/shared.rs and src/chain.rs verbatim, shared state and signal chain; CHECK PASSED, 81 tests passed.
+- S16: src/lib.rs final wiring, scripts/check.ps1 tightened, .gitignore /tools, pluginval level 5 exit code 0; CHECK PASSED, 81 tests passed; HC1 logged.
 
 ## Deviations
 <!-- every minimal fix to a file from an earlier step: file, reason, change -->
