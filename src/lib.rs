@@ -124,7 +124,7 @@ impl HolyMoly {
 
 impl Plugin for HolyMoly {
     const NAME: &'static str = "Holy Moly";
-    const VENDOR: &'static str = "Holy Moly Audio";
+    const VENDOR: &'static str = "Holy Moly";
     const URL: &'static str = "";
     const EMAIL: &'static str = "";
     const VERSION: &'static str = env!("CARGO_PKG_VERSION");
